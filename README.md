@@ -6,6 +6,9 @@ Official Implementation of "Fine Structure-Aware Sampling: A New Sampling Traini
 ## Prerequisite:
 Refer to "environment_setup_for_FSS" text file to install the conda environment, get the required rendered RGB images, and generate the predicted normal maps.
 
+## Sample data:
+We provided some sample data (i.e. Predicted Normal Maps and Sample points for 2 subjects from THuman2.0 dataset). Download from "https://drive.google.com/drive/folders/1QrcoeByfFdCNebHhWgxajdoZyjKBiUvt?usp=sharing" and make sure the downloaded folders are in the directory structure of: "FSS/trained_normal_maps" and "FSS/apps/results/stored_XXX". 
+
 ## To generate and store sample points using FSS. 
 `conda activate fss`
 `cd ./FSS/apps` \
