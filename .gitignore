@@ -1,0 +1,17 @@
+# ignore ALL .log files
+*.log
+*.out
+*.txt
+
+# ignore ALL sftp-config files
+*sftp-config*
+
+# ignore all unnecessary files
+*.pyc
+apps/results/*
+apps/checkpoints/*
+*.DS_Store
+*.zip
+*.npy
+*.npz
+trained_normal_maps/*
