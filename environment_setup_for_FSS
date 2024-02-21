@@ -1,0 +1,42 @@
+
+### Installation 
+conda create --name fss python=3.7.11
+conda activate fss
+
+conda install pytorch torchvision pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install -c conda-forge pyembree
+conda install -c conda-forge trimesh
+conda install -c conda-forge imageio
+conda install -c conda-forge opencv=4.4.0
+conda install -c conda-forge cycler
+conda install -c conda-forge decorator
+conda install -c conda-forge kiwisolver
+conda install -c conda-forge matplotlib
+conda install -c conda-forge networkx
+conda install -c conda-forge pathlib
+conda install pyopengl
+conda install -c conda-forge pywavelets
+conda install -c conda-forge scipy
+conda install -c conda-forge scikit-image
+conda install -c conda-forge shapely
+conda install -c conda-forge tqdm
+conda install -c conda-forge rtree
+
+pip install git+https://github.com/YuliangXiu/rembg.git
+
+
+# if there is something wrong with torchvision (i.e. the cpu distribution is installed), delete the torchvision package and then reinstall it with a command like: conda install torchvision=0.14.1=py37_cu117 -c pytorch 
+# if that doesn't work, try removing pytorch, torchvision, and pytorch-cuda and then reinstalling with "conda install pytorch torchvision pytorch-cuda=11.7 -c pytorch -c nvidia"
+
+git clone git@github.com:kcyt/FSS.git
+
+
+### Rendering the RGB images and, optionally, the Normal maps  
+
+Same as the rendering process in https://github.com/kcyt/IntegratedPIFu, but you just need the RGB images. Normal maps are optional if you are not training the normal prediction model.
+
+Predicted Normal Maps can also be generated using the same process as in IntegratedPIFu.
+
+
+
+
